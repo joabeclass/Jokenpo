@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.game-container {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 24px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e0e0e0;
+}
+
+.result p, .result h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+#outcome {
+    color: #333;
+    font-size: 24px;
+}
+
+/* Media query para telas menores */
+@media (max-width: 600px) {
+    .game-container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    button {
+        font-size: 18px;
+        padding: 8px 15px;
+        margin: 5px 0;
+        width: 100%;
+    }
+
+    .result p, .result h2 {
+        font-size: 16px;
+    }
+
+    #outcome {
+        font-size: 20px;
+    }
+}
